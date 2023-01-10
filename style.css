@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+}
+
+body{
+    background-color: rgb(2, 31, 53);
+    padding: 1rem;
+  
+
+}
+
+.Control{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    border: 4px solid rgb(11, 9, 5);
+    height: 8rem;
+    overflow: hidden;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    transform-origin: bottom left;
+}
+.box img:hover{
+    transform:scale(1.1);
+
+}
+
+.Container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+.Button-Group button{
+    width: 100px;
+    height: 35px;
+    border: 2px solid rgb(119, 4, 4);
+    background-color: rgb(119, 4, 4);
+    font-size: 0.6rem;
+    color: lemonchiffon;
+    cursor:pointer;
+    transition: 0.4s;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.Button-Group button:hover,
+.Button-Group .btn-clicked
+{
+    background-color: rgb(2, 31, 53); 
+}
+
+#search{
+    width: 140px;
+    height: 35px;
+    outline: none;
+    border: 2px solid rgb(119, 4, 4);
+    padding: 0px 10px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    background-color: rgb(2, 31, 53); 
+    color: lightgoldenrodyellow;
+}
